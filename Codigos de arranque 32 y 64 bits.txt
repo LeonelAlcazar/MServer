@@ -1,0 +1,11 @@
+32 bits:
+@echo off
+SET BINDIR=%~dp0
+CD /D "%BINDIR%"
+java -Xms512M -Xmx512M -jar craftbukkit.jar nogui
+pause
+
+64 bits:
+@echo off
+java -Xms512M -Xmx512M -jar craftbukkit.jar nogui
+pause
